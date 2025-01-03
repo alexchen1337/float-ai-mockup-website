@@ -1,0 +1,87 @@
+.navbar {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  width: 95%;
+  max-width: 1400px;
+  border-radius: 12px;
+}
+
+.navbar.scrolled {
+  background: rgba(13, 13, 13, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-center a {
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.navbar-center a:hover {
+  color: #646cff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.download-btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.download-btn:hover {
+  border-color: #646cff;
+}
+
+@media (max-width: 768px) {
+  .navbar-center {
+    display: none;
+  }
+  
+  .navbar-container {
+    padding: 0 1rem;
+  }
+} 
