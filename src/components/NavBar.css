@@ -84,4 +84,14 @@
   .navbar-container {
     padding: 0 1rem;
   }
+}
+
+.navbar-center a[href="/riot.txt"] {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.navbar-center a[href="/riot.txt"]:hover {
+  opacity: 0.8;
 } 
